@@ -11,6 +11,15 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.result, 4)
 
+    def test_add_method_calculator(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.add(2, 2), 4)
+
+    def test_subtract_method_calculator(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.subtract(4, 2), 2)
+        self.assertEqual(calculator.result, 2)
+
 
 if __name__ == '__main__':
     unittest.main()
