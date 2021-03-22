@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_results_property_calculator(self):
         calculator = Calculator()
-        self.assertEqual(calculator.result, 4)
+        self.assertEqual(calculator.result, 0)
 
     def test_add_method_calculator(self):
         calculator = Calculator()
@@ -19,6 +19,11 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.subtract(4, 2), 2)
         self.assertEqual(calculator.result, 2)
+
+    def test_multiplication_method_calculator(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.multiplication(4, 2), 8)
+        self.assertEqual(calculator.result, 8)
 
 
 if __name__ == '__main__':
