@@ -7,6 +7,15 @@ def subtraction(a, b):
 def multiplication(a, b):
     return a * b
 
+def division(a, b):
+    return a / b
+
+def square(a):
+    return a ** 2
+
+def sqrt(a):
+    return a ** (1/2)
+
 class Calculator:
     result = 0
 
@@ -23,4 +32,16 @@ class Calculator:
 
     def multiplication(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def division(self, a, b):
+        self.result = division(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = square(a)
+        return self.result
+
+    def sqrt(self, a):
+        self.result = sqrt(a)
         return self.result
