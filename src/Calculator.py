@@ -8,13 +8,13 @@ def multiplication(a, b):
     return a * b
 
 def division(a, b):
-    return a / b
+    return round((a / b), 9)
 
 def square(a):
-    return a ** 2
+    return a * a
 
 def sqrt(a):
-    return a ** (1/2)
+    return round(a**(1/2), 8)
 
 class Calculator:
     result = 0
