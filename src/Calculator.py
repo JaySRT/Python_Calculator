@@ -2,13 +2,13 @@ def addition(a, b):
     return a + b
 
 def subtraction(a, b):
-    return a - b
+    return b - a
 
 def multiplication(a, b):
     return a * b
 
 def division(a, b):
-    return round((a / b), 9)
+    return round((b / a), 9)
 
 def square(a):
     return a * a
